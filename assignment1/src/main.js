@@ -1,3 +1,5 @@
+import './style.css';
+
 const title = document.getElementById("title");
 
 const paragraph = document.getElementById("paragraph");
