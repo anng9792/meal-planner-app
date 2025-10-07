@@ -1,13 +1,53 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meal Planner App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Meal Planner App</h1>
+
+  <div id="search-bar"></div>
+
+<div class="search-container">
+  <div class="search-bar-row">
+    <input 
+      type="text" 
+      id="recipe-search" 
+      placeholder="Search recipes..." 
+    />
+    <button id="search-btn">Search</button>
+  </div>
+
+  <div class="ingredient-input">
+    <input 
+      type="text" 
+      id="ingredient-entry" 
+      placeholder="Add ingredients you already have (press Enter)" 
+    />
+    <div id="ingredient-list"></div>
+  </div>
+
+  <div class="filters">
+    <button class="filter-btn" data-filter="vegan">Vegan</button>
+    <button class="filter-btn" data-filter="vegetarian">Vegetarian</button>
+    <button class="filter-btn" data-filter="protein">High Protein</button>
+    <button class="filter-btn" data-filter="quick">Quick</button>
+    <button class="filter-btn" data-filter="budget-friendly">Budget-Friendly</button>
+    <button class="filter-btn" data-filter="top-rated">Top-Rated</button>
+  </div>
+</div>
+
+
+
+  <div id="gallery"></div>
+
+  <div id="recipe-card"></div>
+
+  <script src="src/search-bar/search.js"></script>
+  <script src="src/gallery/gallery.js"></script>
+  <script src="src/recipe-card/recipe.js"></script>
+</body>
 </html>
